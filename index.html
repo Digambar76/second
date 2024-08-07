@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        
+.as::-webkit-inner-spin-button, 
+::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+
+    </style>
+</head>
+<body>
+  <FIeldset>
+<label for="Num">First Number</label>
+<input class="as" placeholder="First Num" type="number" id="a" > 
+<br><br><br>
+<label for="Num" >Second number</label>
+<input class="as" placeholder="Second Num" type="number"  id="aa" >
+<br><br>
+<button onclick="fun()">Add</button>
+<button onclick="fun1()">Sub</button>
+<button onclick="fun2()">Multi</button>
+<button onclick="fun3()"> Div</button>
+<br><br>
+<label for="Answer"> Answer</label>
+<input type="number" disabled style="background-color: white ; border: 2px solid black;" id="aaa">
+</FIeldset>
+<script>
+    function fun() {
+      let first= parseInt ( document.getElementById("a").value);
+      let Second= parseInt ( document.getElementById("aa").value);
+      let third= parseInt ( document.getElementById("aaa").value=first+Second);
+
+    }
+
+    function fun1() {
+      let first= parseInt ( document.getElementById("a").value);
+     let Second= parseInt ( document.getElementById("aa").value);
+      let third= parseInt ( document.getElementById("aaa").value=first-Second);
+
+    }
+    function fun2() {
+      let first= parseInt ( document.getElementById("a").value);
+      let Second= parseInt ( document.getElementById("aa").value);
+      let third= parseInt ( document.getElementById("aaa").value=first*Second);
+
+    }
+    function fun3() {
+      let first= parseInt ( document.getElementById("a").value);
+     let Second= parseInt ( document.getElementById("aa").value);
+      let third= parseInt ( document.getElementById("aaa").value=first/Second);
+
+    }
+</script>
+ 
+</body>
+</html>
